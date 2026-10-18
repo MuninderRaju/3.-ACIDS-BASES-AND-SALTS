@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 3: Acids, Bases and Salts - Solutions & Quiz</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script id="mathjax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    .lang-te { display: none; }
+    .active-te .lang-en { display: none !important; }
+    .active-te .lang-te { display: block !important; }
+    .active-te inline.lang-te, .active-te span.lang-te { display: inline !important; }
+    .answer-content { display: none; }
+    .answer-content.show { display: block; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col justify-between">
+
+  <!-- Header & Language Switcher -->
+  <header class="bg-blue-800 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 md:py-4 flex justify-between items-center gap-2">
+      <div>
+        <h1 class="text-lg md:text-2xl font-bold leading-tight">3. ACIDS, BASES AND SALTS</h1>
+        <p class="text-xs md:text-sm text-blue-200 mt-0.5">Class 10 Physical Science | Abhyasa Deepika Assessment & Quiz</p>
+      </div>
+      <!-- Language Toggle Switch -->
+      <button onclick="toggleLanguage()" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-lg shadow transition duration-200 text-xs md:text-sm shrink-0 flex items-center gap-1.5">
+        <span>🌐</span>
+        <span id="langBtnText">Switch to Telugu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-4xl mx-auto px-3 md:px-4 py-6 md:py-8 flex-grow w-full">
+
+    <div class="bg-white rounded-xl shadow-md p-4 md:p-6 border border-gray-200 mb-6">
+
+      <!-- SECTION 1: VERY SHORT ANSWER QUESTIONS -->
+      <div class="bg-blue-100 border-l-4 border-blue-800 p-3 rounded mb-6">
+        <h2 class="text-base md:text-lg font-bold text-blue-900">
+          <span class="lang-en">Very Short Answer Questions</span>
+          <span class="lang-te">అతి స్వల్ప సమాధాన ప్రశ్నలు</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 mb-8">
+        <!-- Q1 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans1', 'icon1')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">1. Write the colour of acid in the presence of methyl orange indicator & phenolphthalein indicator?</span>
+              <span class="lang-te">1. మిథైల్ ఆరెంజ్ మరియు ఫినాఫ్తలీన్ సూచికల సమక్షంలో ఆమ్లం రంగును రాయండి.</span>
+            </span>
+            <span id="icon1" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans1" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>• Methyl Orange in Acid: Red colour.</p>
+              <p>• Phenolphthalein in Acid: Colourless.</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>• ఆమ్లంలో మిథైల్ ఆరెంజ్: ఎరుపు రంగు.</p>
+              <p>• ఆమ్లంలో ఫినాఫ్తలీన్: రంగు ఉండదు (రంగు లేనిది).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans2', 'icon2')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">2. Write the result of the experiment to observe the reaction of acids with metals?</span>
+              <span class="lang-te">2. లోహాలతో ఆమ్లాల చర్యను పరిశీలించే ప్రయోగ ఫలితాన్ని రాయండి.</span>
+            </span>
+            <span id="icon2" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans2" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>Result: Acids react with metals to produce Hydrogen gas ($\text{H}_2$) and corresponding salt. Hydrogen gas burns with a 'pop' sound.</p>
+              <p>$$\text{Acid} + \text{Metal} \rightarrow \text{Salt} + \text{Hydrogen Gas}$$</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>ఫలితం: ఆమ్లాలు లోహాలతో చర్య జరిపి హైడ్రోజన్ వాయువును ($\text{H}_2$) మరియు లవణాన్ని ఇస్తాయి. హైడ్రోజన్ వాయువు మండుతున్న పుల్ల వద్ద 'పాప్' మనే శబ్దంతో మండుతుంది.</p>
+              <p>$$\text{ఆమ్లం} + \text{లోహం} \rightarrow \text{లవణం} + \text{హైడ్రోజన్ వాయువు}$$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans3', 'icon3')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">3. How to test the gas evolved when acid reacts with carbonates?</span>
+              <span class="lang-te">3. ఆమ్లాలు కార్బోనేట్లతో చర్య జరిపినప్పుడు వెలువడే వాయువును ఎలా పరీక్షించాలి?</span>
+            </span>
+            <span id="icon3" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans3" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Answer: Pass the evolved gas ($\text{CO}_2$) through lime water ($\text{Ca(OH)}_2$). The lime water turns milky white due to formation of calcium carbonate precipitate.</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: వెలువడిన వాయువును ($\text{CO}_2$) సున్నపు నీటి (లైమ్ వాటర్) గుండా పంపినప్పుడు, సున్నపు నీరు తెల్లగా పాలవలె మారుతుంది.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans4', 'icon4')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">4. How pH causes tooth decay?</span>
+              <span class="lang-te">4. pH వ్యత్యాసము పళ్ల క్షయానికి ఎలా కారణమవుతుంది?</span>
+            </span>
+            <span id="icon4" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans4" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Answer: Tooth decay starts when the pH of the mouth falls below 5.5. Bacteria in the mouth produce acids by degrading sugar and food particles, which corrodes the enamel (Calcium phosphate).</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: నోటిలోని pH విలువ 5.5 కంటే తగ్గితే పళ్ల క్షయం (Tooth decay) ప్రారంభమవుతుంది. నోటిలోని బ్యాక్టీరియా మనం తిన్న ఆహార పదార్థాలను క్షయించి ఆమ్లాలను ఉత్పత్తి చేయడం వల్ల పంటి ఎనామిల్ క్షీణిస్తుంది.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans5', 'icon5')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">5. Write an example for reaction of base with non-metal oxide.</span>
+              <span class="lang-te">5. అలోహ ఆక్సైడ్‌తో క్షారం జరిపే చర్యకు ఒక ఉదాహరణ రాయండి.</span>
+            </span>
+            <span id="icon5" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans5" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>$$\text{Ca(OH)}_2\text{(aq)} + \text{CO}_2\text{(g)} \rightarrow \text{CaCO}_3\text{(s)} + \text{H}_2\text{O(l)}$$</p>
+              <p>(Calcium hydroxide + Carbon dioxide $\rightarrow$ Calcium carbonate + Water)</p>
+            </div>
+            <div class="lang-te">
+              <p>$$\text{Ca(OH)}_2\text{(aq)} + \text{CO}_2\text{(g)} \rightarrow \text{CaCO}_3\text{(s)} + \text{H}_2\text{O(l)}$$</p>
+              <p>(కాల్షియం హైడ్రాక్సైడ్ + కార్బన్ డై ఆక్సైడ్ $\rightarrow$ కాల్షియం కార్బోనేట్ + నీరు)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans6', 'icon6')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">6. Why the bulb did not glow in the glucose solution when electricity is passed through it?</span>
+              <span class="lang-te">6. గ్లూకోజ్ ద్రావణం గుండా విద్యుత్‌ను ప్రసరింపజేసినప్పుడు బల్బు ఎందుకు వెలగలేదు?</span>
+            </span>
+            <span id="icon6" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans6" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Answer: Glucose does not dissociate into free ions ($\text{H}^+$ or $\text{OH}^-$) in water. Since there are no free ions to carry electric charge, it does not conduct electricity.</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: గ్లూకోజ్ ద్రావణంలో ఉచిత అయాన్లు ($\text{H}^+$ లేదా $\text{OH}^-$) విడిపోవు/ఏర్పడవు. అయాన్లు లేకపోవడం వల్ల ద్రావణం విద్యుత్‌ను ప్రసరింపజేయలేదు, అందుకే బల్బు వెలగలేదు.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans7', 'icon7')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">7. Write the names of two salts obtained from common salt.</span>
+              <span class="lang-te">7. సాధారణ ఉప్పు (సాధారణ లవణం) నుండి తయారుచేసే ఏవైనా రెండు లవణాల పేర్లు రాయండి.</span>
+            </span>
+            <span id="icon7" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans7" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>1. Sodium Hydroxide / Caustic Soda ($\text{NaOH}$)</p>
+              <p>2. Baking Soda ($\text{NaHCO}_3$) / Washing Soda ($\text{Na}_2\text{CO}_3\cdot10\text{H}_2\text{O}$)</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>1. సోడియం హైడ్రాక్సైడ్ / కాస్టిక్ సోడా ($\text{NaOH}$)</p>
+              <p>2. బేకింగ్ సోడా ($\text{NaHCO}_3$) / వాషింగ్ సోడా ($\text{Na}_2\text{CO}_3\cdot10\text{H}_2\text{O}$)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans8', 'icon8')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">8. If a solution turns red litmus into blue, what will be the possible pH value of that solution?</span>
+              <span class="lang-te">8. ఒక ద్రావణం ఎర్ర లిట్మస్‌ను నీలి రంగులోకి మార్చితే, ఆ ద్రావణం యొక్క సాధ్యమయ్యే pH విలువ ఎంత ఉండవచ్చు?</span>
+            </span>
+            <span id="icon8" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans8" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Answer: The solution is Basic in nature. Therefore, its pH value will be greater than 7 (e.g., pH = 8 to 14).</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: ఆ ద్రావణం క్షార స్వభావం (Base) కలిగి ఉంటుంది. కావున దాని pH విలువ 7 కంటే ఎక్కువ ఉంటుంది (ఉదాహరణకు: pH = 8 నుండి 14 వరకు).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q9 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans9', 'icon9')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">9. Two solutions have their pH values as 13.5 and 10.5. Which of them is strong base and which is weak base?</span>
+              <span class="lang-te">9. రెండు ద్రావణాల pH విలువలు వరుసగా 13.5 మరియు 10.5. వాటిలో ఏది బలమైన క్షారం, ఏది బలహీనమైన క్షారం?</span>
+            </span>
+            <span id="icon9" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans9" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>• Strong Base: pH = 13.5 (Higher pH value represents stronger base).</p>
+              <p>• Weak Base: pH = 10.5</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>• బలమైన క్షారం: pH = 13.5 (ఎక్కువ pH విలువ ఉన్నది బలమైన క్షారం).</p>
+              <p>• బలహీన క్షారం: pH = 10.5</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q10 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('ans10', 'icon10')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">10. Write the material required to conduct activity removing water of crystallization.</span>
+              <span class="lang-te">10. స్పటిక జలాన్ని తొలగించే ప్రయోగానికి కావలసిన పరికరాల జాబితా రాయండి.</span>
+            </span>
+            <span id="icon10" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans10" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en">
+              <p>Apparatus: Copper sulphate crystals ($\text{CuSO}_4\cdot5\text{H}_2\text{O}$), dry test tube, test tube holder, Bunsen burner, delivery tube/dropper, water.</p>
+            </div>
+            <div class="lang-te">
+              <p>పరికరాలు: మైలుతుత్థం (కాపర్ సల్ఫేట్) స్పటికాలు, పొడి పరీక్షనాళిక, టెస్ట్ ట్యూబ్ హోల్డర్, బన్సన్ బర్నర్, నీరు.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: SHORT ANSWER QUESTIONS -->
+      <div class="bg-blue-100 border-l-4 border-blue-800 p-3 rounded mb-6">
+        <h2 class="text-base md:text-lg font-bold text-blue-900">
+          <span class="lang-en">Short Answer Questions</span>
+          <span class="lang-te">స్వల్ప సమాధాన ప్రశ్నలు</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 mb-8">
+        <!-- SQ1 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans1', 'sicon1')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">1. List out the material required, precautions and procedure of experiment to observe reaction of acids with carbonates and hydrogen carbonates.</span>
+              <span class="lang-te">1. కార్బోనేట్లు, హైడ్రోజన్ కార్బోనేట్లతో ఆమ్లాల చర్యను పరిశీలించే ప్రయోగానికి కావలసిన పరికరాలు, జాగ్రత్తలు మరియు ప్రయోగ విధానం రాయండి.</span>
+            </span>
+            <span id="sicon1" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans1" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-2">
+            <div class="lang-en space-y-1">
+              <p>• Material: Two test tubes, $\text{Na}_2\text{CO}_3$, $\text{NaHCO}_3$, dilute $\text{HCl}$, lime water, thistle funnel, delivery tube.</p>
+              <p>• Procedure: Add $0.5\text{g}$ sodium carbonate to test tube A and sodium hydrogen carbonate to test tube B. Add $2\text{ml}$ dilute $\text{HCl}$ to both. Pass the evolved gas through lime water.</p>
+              <p>• Observation: Lime water turns milky white due to $\text{CO}_2$ gas release.</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>• కావలసిన పరికరాలు: రెండు పరీక్షనాళికలు, $\text{Na}_2\text{CO}_3$, $\text{NaHCO}_3$, విలీన $\text{HCl}$, సున్నపు నీరు, నిలువు గొట్టం, వాయు వాహక నాళం.</p>
+              <p>• ప్రయోగ విధానం: A పరీక్షనాళికలో $0.5\text{g}$ సోడియం కార్బోనేట్, B లో $0.5\text{g}$ సోడియం హైడ్రోజన్ కార్బోనేట్ తీసుకొని, రెండింటికి $2\text{ml}$ విలీన $\text{HCl}$ కలపాలి. వెలువడిన వాయువును సున్నపు నీటి గుండా పంపాలి.</p>
+              <p>• పరిశీలన: $\text{CO}_2$ వాయువు వల్ల సున్నపు నీరు పాలవలె తెల్లగా మారుతుంది.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ2 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans2', 'sicon2')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">2. Explain neutralization reaction with an example.</span>
+              <span class="lang-te">2. తటస్థీకరణ చర్యను ఉదాహరణతో వివరించండి.</span>
+            </span>
+            <span id="sicon2" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans2" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>Definition: The reaction between an acid and a base to form salt and water is called Neutralization.</p>
+              <p>$$\text{Acid} + \text{Base} \rightarrow \text{Salt} + \text{Water}$$</p>
+              <p>Example: $$\text{HCl(aq)} + \text{NaOH(aq)} \rightarrow \text{NaCl(aq)} + \text{H}_2\text{O(l)}$$</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>నిర్వచనం: ఆమ్లం మరియు క్షారం పరస్పరం చర్య జరిపి లవణం మరియు నీటిని ఏర్పరిచే చర్యను 'తటస్థీకరణ చర్య' (Neutralization) అంటారు.</p>
+              <p>$$\text{ఆమ్లం} + \text{క్షారం} \rightarrow \text{లవణం} + \text{నీరు}$$</p>
+              <p>ఉదాహరణ: $$\text{HCl(aq)} + \text{NaOH(aq)} \rightarrow \text{NaCl(aq)} + \text{H}_2\text{O(l)}$$</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ3 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans3', 'sicon3')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">3. Why do we add acid to water while diluting an acid, but not water to acid?</span>
+              <span class="lang-te">3. ఆమ్లాన్ని విలీనం చేసేటప్పుడు నీటికి ఆమ్లాన్ని కలపాలి గాని, ఆమ్లానికి నీటిని కలపకూడదు. ఎందుకు?</span>
+            </span>
+            <span id="sicon3" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans3" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>Answer: Dilution of a concentrated acid is a highly exothermic process. If water is added to acid, large amount of heat generated may cause the mixture to splash out and cause chemical burns, or break the glass container.</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>జవాబు: గాఢ ఆమ్లానికి నీటిని కలిపే చర్య అత్యంత ఉష్ణమోచక చర్య (Exothermic). ఆమ్లానికి నీటిని కలిపితే ఒక్కసారిగా అధిక ఉష్ణం విడుదలవుతుంది. దీనివల్ల ఆమ్లం తుల్లి ముఖంపై పడి తీవ్ర గాయాలు కావడం లేదా గాజు పాత్ర పగిలిపోయే ప్రమాదం ఉంది.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ4 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans4', 'sicon4')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">4. Mention the daily life uses of washing soda.</span>
+              <span class="lang-te">4. నిత్యజీవితంలో వాషింగ్ సోడా యొక్క ఉపయోగాలను తెలపండి.</span>
+            </span>
+            <span id="sicon4" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans4" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>1. Used in glass, soap, and paper industries.</p>
+              <p>2. Used for removing permanent hardness of water.</p>
+              <p>3. Used as a cleansing agent for domestic laundry purposes.</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>1. గాజు, సబ్బు మరియు కాగితపు పరిశ్రమలలో ఉపయోగిస్తారు.</p>
+              <p>2. నీటి శాశ్వత కాఠిన్యతను తొలగించడానికి ఉపయోగిస్తారు.</p>
+              <p>3. గృహావసరాలలో బట్టలు ఉతకడానికి శోధనకారిగా (Cleansing agent) ఉపయోగిస్తారు.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ5 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans5', 'sicon5')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">5. Write the uses of sodium hydrogen carbonate (Baking soda) in our daily life.</span>
+              <span class="lang-te">5. నిత్యజీవితంలో సోడియం హైడ్రోజన్ కార్బోనేట్ (బేకింగ్ సోడా) యొక్క ఉపయోగాలను తెలపండి.</span>
+            </span>
+            <span id="sicon5" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans5" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>1. Used in bakery for making cakes and bread soft and spongy.</p>
+              <p>2. Used as an Antacid to neutralize excess stomach acidity.</p>
+              <p>3. Used in soda-acid fire extinguishers.</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>1. బేకరీ ఉత్పత్తులలో (కేకులు, బ్రెడ్) వాటిని మెత్తగా, స్పాంజీలా చేయడానికి ఉపయోగిస్తారు.</p>
+              <p>2. ఎసిడిటీకి ఉపశమనంగా యాంటాసిడ్ (Antacid) లలో ఉపయోగిస్తారు.</p>
+              <p>3. సోడా-యాసిడ్ అగ్నిమాపక యంత్రాలలో ఉపయోగిస్తారు.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ6 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans6', 'sicon6')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">6. Write the uses of plaster of paris in our daily life.</span>
+              <span class="lang-te">6. నిత్యజీవితంలో ప్లాస్టర్ ఆఫ్ పారిస్ యొక్క ఉపయోగాలను తెలపండి.</span>
+            </span>
+            <span id="sicon6" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans6" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>1. Used by doctors as plaster for supporting fractured bones in right position.</p>
+              <p>2. Used for making toys, statues, and decorative materials.</p>
+              <p>3. Used for making smooth surfaces on walls and ceilings.</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>1. విరిగిన ఎముకలను సరైన స్థానంలో ఉంచడానికి డాక్టర్లు కట్టు కట్టడానికి ఉపయోగిస్తారు.</p>
+              <p>2. బొమ్మలు, విగ్రహాలు, అలంకరణ వస్తువుల తయారీలో ఉపయోగిస్తారు.</p>
+              <p>3. గదుల గోడలు మరియు సీలింగ్‌లను నునుపుగా చేయడానికి ఉపయోగిస్తారు.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ7 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans7', 'sicon7')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">7. Write the uses of bleaching powder in our daily life.</span>
+              <span class="lang-te">7. నిత్యజీవితంలో బ్లీచింగ్ పౌడర్ యొక్క ఉపయోగాలను తెలపండి.</span>
+            </span>
+            <span id="sicon7" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans7" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm">
+            <div class="lang-en space-y-1">
+              <p>1. Used as a disinfectant for water purification to make water bug-free.</p>
+              <p>2. Used for bleaching cotton and linen in textile industry.</p>
+              <p>3. Used as an oxidizing agent in chemical industries.</p>
+            </div>
+            <div class="lang-te space-y-1">
+              <p>1. తాగునీటిని క్రిమిరహితం చేయడానికి (విసంక్రమణకారిగా) ఉపయోగిస్తారు.</p>
+              <p>2. టెక్స్‌టైల్ పరిశ్రమలలో నూలు, దుస్తులను బ్లీచ్ చేయడానికి ఉపయోగిస్తారు.</p>
+              <p>3. రసాయన పరిశ్రమలలో ఆక్సీకరణిగా (Oxidizing agent) ఉపయోగిస్తారు.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ8 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans8', 'sicon8')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">8. Explain the experimental process of removing water of crystallization.</span>
+              <span class="lang-te">8. స్పటిక జలాన్ని తొలగించే ప్రయోగ విధానాన్ని వివరించండి.</span>
+            </span>
+            <span id="sicon8" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans8" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-1">
+            <div class="lang-en">
+              <p>Procedure: Heat a few copper sulphate crystals ($\text{CuSO}_4\cdot5\text{H}_2\text{O}$) in a dry test tube over a burner flame.</p>
+              <p>Observation: Blue crystals lose water droplets on upper test tube walls and turn into white anhydrous powder ($\text{CuSO}_4$). On adding a few drops of water, blue color reappears.</p>
+            </div>
+            <div class="lang-te">
+              <p>విధానం: పొడి పరీక్షనాళికలో కొన్ని నీలిరంగు కాపర్ సల్ఫేట్ స్పటికాలను తీసుకొని బర్నర్‌పై వేడి చేయాలి.</p>
+              <p>పరిశీలన: వేడి చేసినప్పుడు స్పటిక జలం ఆవిరై, పరీక్షనాళిక గోడలపై నీటి చుక్కలు ఏర్పడతాయి. నీలిరంగు స్పటికాలు తెల్లని పొడిగా మారతాయి. మరల నీటి చుక్కలు కలిపితే నీలిరంగు తిరిగి వస్తుంది.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQ9 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('sans9', 'sicon9')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">9. What happens if pH of the soil is not maintained properly?</span>
+              <span class="lang-te">9. నేల pH సరిగ్గా లేకపోతే (నిర్వహించబడకపోతే) ఏమి జరుగుతుంది?</span>
+            </span>
+            <span id="sicon9" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="sans9" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-1">
+            <div class="lang-en">
+              <p>Answer: Plants require a specific pH range for healthy growth. If soil becomes too acidic or too basic, plants cannot absorb nutrients properly, leading to poor crop yield. Acidic soil is treated with quicklime ($\text{CaO}$) or slaked lime ($\text{Ca(OH)}_2$).</p>
+            </div>
+            <div class="lang-te">
+              <p>జవాబు: మొక్కల ఆరోగ్యకరమైన ఎదుగుదలకు అనుకూలమైన pH పరిధి అవసరం. నేల అతిగా ఆమ్లత్వంగా లేదా క్షారత్వంగా మారితే మొక్కలు పోషకాలను తీసుకోలేవు, దిగుబడి తగ్గుతుంది. ఆమ్ల నేలలకు సున్నం ($\text{CaO}$) లేదా తడిపిన సున్నం కలిపి సరిచేస్తారు.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: ESSAY TYPE QUESTIONS -->
+      <div class="bg-blue-100 border-l-4 border-blue-800 p-3 rounded mb-6">
+        <h2 class="text-base md:text-lg font-bold text-blue-900">
+          <span class="lang-en">Essay Type Questions</span>
+          <span class="lang-te">వ్యాసరూప సమాధాన ప్రశ్నలు</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 mb-8">
+        <!-- EQ1 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('eans1', 'eicon1')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">1. Observe the following table and answer the questions given below:</span>
+              <span class="lang-te">1. కింది పట్టికను పరిశీలించి ఇచ్చిన ప్రశ్నలకు సమాధానాలు ఇవ్వండి:</span>
+            </span>
+            <span id="eicon1" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="eans1" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-3">
+            
+            <!-- Responsive Mobile Table -->
+            <div class="overflow-x-auto my-2">
+              <table class="min-w-full bg-white border border-green-300 text-center text-xs md:text-sm">
+                <thead>
+                  <tr class="bg-blue-800 text-white">
+                    <th class="p-2 border">Substance (పదార్థం)</th>
+                    <th class="p-2 border">A</th>
+                    <th class="p-2 border">B</th>
+                    <th class="p-2 border">C</th>
+                    <th class="p-2 border">D</th>
+                    <th class="p-2 border">E</th>
+                    <th class="p-2 border">F</th>
+                    <th class="p-2 border">G</th>
+                  </tr>
+                </thead>
+                <tbody class="text-gray-900">
+                  <tr>
+                    <td class="p-2 border font-bold">pH value (pH విలువ)</td>
+                    <td class="p-2 border">7</td>
+                    <td class="p-2 border">8.5</td>
+                    <td class="p-2 border">3</td>
+                    <td class="p-2 border">5.5</td>
+                    <td class="p-2 border">12.5</td>
+                    <td class="p-2 border">13.5</td>
+                    <td class="p-2 border">9</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="lang-en space-y-2">
+              <p>i) <strong>Identify acids and bases in the table:</strong><br>
+              • Acids (pH &lt; 7): C (pH 3), D (pH 5.5)<br>
+              • Bases (pH &gt; 7): B (pH 8.5), E (pH 12.5), F (pH 13.5), G (pH 9)<br>
+              • Neutral (pH = 7): A</p>
+              
+              <p>ii) <strong>Result when substance A is tested with Phenolphthalein:</strong><br>
+              • Substance A is neutral (pH = 7). So, Phenolphthalein remains <strong>Colourless</strong>.</p>
+              
+              <p>iii) <strong>Nature of salt formed when B and C react:</strong><br>
+              • Substance B is a Weak Base (pH 8.5) and C is a Strong Acid (pH 3).<br>
+              • Reaction gives an <strong>Acidic Salt</strong> (pH &lt; 7).</p>
+            </div>
+
+            <div class="lang-te space-y-2">
+              <p>i) <strong>ఆమ్లాలు, క్షారాలను గుర్తించి రాయండి:</strong><br>
+              • ఆమ్లాలు (pH &lt; 7): C (pH 3), D (pH 5.5)<br>
+              • క్షారాలు (pH &gt; 7): B (pH 8.5), E (pH 12.5), F (pH 13.5), G (pH 9)<br>
+              • తటస్థ పదార్థం (pH = 7): A</p>
+              
+              <p>ii) <strong>పదార్థం A ని ఫినాఫ్తలీన్‌తో పరీక్షించినప్పుడు ఫలితం:</strong><br>
+              • A తటస్థ పదార్థం (pH = 7). కావున ఫినాఫ్తలీన్ <strong>రంగు మారదు (రంగు లేనిది)</strong>.</p>
+              
+              <p>iii) <strong>B మరియు C చర్య పొందితే ఏర్పడే లవణ స్వభావం:</strong><br>
+              • B బలహీన క్షారం (pH 8.5), C బలమైన ఆమ్లం (pH 3).<br>
+              • కావున ఏర్పడేది <strong>ఆమ్ల లవణం (Acidic Salt)</strong>.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EQ2 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('eans2', 'eicon2')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">2. Write experimental procedure, observations and result of experiment to observe reaction of acids with metals.</span>
+              <span class="lang-te">2. లోహాలతో ఆమ్లాల చర్యను పరిశీలించే ప్రయోగానికి కావలసిన పరికరాలు, ప్రయోగ విధానం, పరిశీలనలు మరియు ఫలితం రాయండి.</span>
+            </span>
+            <span id="eicon2" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="eans2" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-2">
+            <div class="lang-en">
+              <p>• Aim: To observe reaction of acids with metals.</p>
+              <p>• Apparatus: Test tube, stand, delivery tube, trough, soap water solution, zinc granules, dilute $\text{HCl}$, candle.</p>
+              <p>• Procedure: Take $10\text{ml}$ dilute $\text{HCl}$ and zinc granules in test tube. Fit rubber stopper with delivery tube dipped in soap solution.</p>
+              <p>• Observation: Gas bubbles form in soap water. Bring a burning candle near bubbles; gas burns with a 'pop' sound.</p>
+              <p>• Result: Hydrogen gas ($\text{H}_2$) is liberated.</p>
+            </div>
+            <div class="lang-te">
+              <p>• ఉద్దేశం: లోహాలతో ఆమ్లాల చర్యను పరిశీలించుట.</p>
+              <p>• పరికరాలు: పరీక్షనాళిక, స్టాండ్, వాయు వాహక నాళం, సబ్బు నీటి తొట్టి, జింక్ ముక్కలు, విలీన $\text{HCl}$, మండుతున్న కొవ్వొత్తి.</p>
+              <p>• విధానం: పరీక్షనాళికలో $10\text{ml}$ విలీన $\text{HCl}$ తీసుకొని దానికి జింక్ ముక్కలు కలపాలి. వాహక నాళాన్ని సబ్బు నీటి తొట్టిలో ముంచాలి.</p>
+              <p>• పరిశీలన: సబ్బు నీటిలో బుడగలు వస్తాయి. మండుతున్న కొవ్వొత్తి తెస్తే 'పాప్' మనే శబ్దంతో మండుతుంది.</p>
+              <p>• ఫలితం: హైడ్రోజన్ వాయువు ($\text{H}_2$) విడుదలవుతుంది.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- EQ3 -->
+        <div class="border border-red-200 rounded-lg overflow-hidden bg-white shadow-sm">
+          <div onclick="toggleAnswer('eans3', 'eicon3')" class="bg-red-50 hover:bg-red-100 p-3 md:p-4 cursor-pointer flex justify-between items-center transition duration-150">
+            <span class="text-red-700 font-bold text-sm md:text-base">
+              <span class="lang-en">3. List out material, precautions and procedure of experiment to observe that acids show electrical conductivity.</span>
+              <span class="lang-te">3. ఆమ్లాలు విద్యుత్ వాహకతను చూపుతాయని నిరూపించే ప్రయోగానికి కావలసిన పరికరాలు, జాగ్రత్తలు మరియు ప్రయోగ విధానం రాయండి.</span>
+            </span>
+            <span id="eicon3" class="text-red-700 font-bold text-lg md:text-xl ml-2 shrink-0">+</span>
+          </div>
+          <div id="ans3_eq" class="answer-content p-3 md:p-4 bg-green-50 border-t border-green-200 text-green-900 font-bold text-xs md:text-sm space-y-2">
+            <div class="lang-en">
+              <p>• Apparatus: Beaker, rubber cork, two graphite rods/iron nails, $6\text{V}$ battery, bulb, switch, dilute $\text{HCl}$.</p>
+              <p>• Procedure: Place rubber cork with nails in beaker. Connect nails to $6\text{V}$ battery with bulb and switch. Pour dilute $\text{HCl}$ and switch on current.</p>
+              <p>• Observation: The bulb glows brightly.</p>
+              <p>• Conclusion: Acid solution contains free $\text{H}^+$ ions which carry electricity.</p>
+            </div>
+            <div class="lang-te">
+              <p>• పరికరాలు: బీకరు, రబ్బరుబిరడా, రెండు గ్రాఫైట్ రాడ్లు/ఇనుప మేకులు, $6\text{V}$ బ్యాటరీ, బల్బు, స్విచ్, విలీన $\text{HCl}$.</p>
+              <p>• విధానం: బీకరులోని బిరడాపై మేకులు ఉంచి బ్యాటరీ, బల్బు, స్విచ్‌ల ద్వారా విద్యుత్ వలయాన్ని కలపాలి. విలీన $\text{HCl}$ పోసి స్విచ్ వేయాలి.</p>
+              <p>• పరిశీలన: బల్బు ప్రకాశవంతంగా వెలుగుతుంది.</p>
+              <p>• ముగింపు: ఆమ్ల ద్రావణం విద్యుత్‌ను మోసుకెళ్లే చలించే $\text{H}^+$ అయాన్లను కలిగి ఉండటం వల్ల విద్యుత్ ప్రసరిస్తుంది.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 4: MULTIPLE CHOICE QUESTIONS QUIZ -->
+      <div class="bg-blue-100 border-l-4 border-blue-800 p-3 rounded mb-6 flex justify-between items-center">
+        <h2 class="text-base md:text-lg font-bold text-blue-900">
+          <span class="lang-en">Multiple Choice Questions Quiz</span>
+          <span class="lang-te">బహుళైచ్ఛిక ప్రశ్నల క్విజ్ (MCQs)</span>
+        </h2>
+        <span class="text-xs md:text-sm font-bold text-blue-800 bg-white px-2.5 py-1 rounded-full border border-blue-300">Total: 6 Marks</span>
+      </div>
+
+      <!-- Scoreboard Display -->
+      <div id="scoreBox" class="hidden mb-6 p-4 bg-yellow-50 border-2 border-yellow-400 rounded-xl text-center">
+        <h3 class="text-xl md:text-2xl font-bold text-yellow-800" id="scoreTitle">Your Score: 0 / 6</h3>
+        <p class="text-xs md:text-sm font-bold text-gray-700 mt-1">క్రింద ప్రతీ ప్రశ్నకు సరియైన సమాధానం మరియు విశ్లేషణను చూడండి.</p>
+      </div>
+
+      <form id="quizForm" class="space-y-6">
+
+        <!-- MCQ 1 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q1_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">1. Which of the following turns blue litmus to red?</span>
+            <span class="lang-te">1. కింది వాటిలో నీలి లిట్మస్‌ను ఎరుపు రంగులోకి మార్చేది ఏది?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q1" value="A"> A) $\text{NaOH}$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q1" value="B"> B) $\text{Ca(OH)}_2$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q1" value="C"> C) $\text{H}_2\text{SO}_4$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q1" value="D"> D) $\text{KOH}$</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q2_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">2. Which substance from the following has the value of pH greater than 7?</span>
+            <span class="lang-te">2. కింది వాటిలో pH విలువ 7 కంటే ఎక్కువ ఉన్న పదార్థం ఏది?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q2" value="A"> A) $\text{HCl}$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q2" value="B"> B) $\text{H}_2\text{SO}_4$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q2" value="C"> C) $\text{HNO}_3$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q2" value="D"> D) $\text{NaOH}$</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 3 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q3_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">3. Non metal oxide + ____ $\rightarrow$ salt + water</span>
+            <span class="lang-te">3. అలోహ ఆక్సైడ్ + ____ $\rightarrow$ లవణం + నీరు</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q3" value="A"> 
+              <span class="lang-en">A) Acid</span><span class="lang-te">A) ఆమ్లం</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q3" value="B"> 
+              <span class="lang-en">B) Base</span><span class="lang-te">B) క్షారం</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q3" value="C"> 
+              <span class="lang-en">C) Neutral solution</span><span class="lang-te">C) తటస్థ ద్రావణం</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q3" value="D"> 
+              <span class="lang-en">D) None</span><span class="lang-te">D) ఏదీ కాదు</span>
+            </label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 4 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q4_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">4. Which of the following is used for making toys?</span>
+            <span class="lang-te">4. కింది వాటిలో బొమ్మల తయారీలో ఉపయోగించేది ఏది?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q4" value="A"> A) $\text{CaSO}_4\cdot\frac{1}{2}\text{H}_2\text{O}$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q4" value="B"> B) $\text{CaSO}_4\cdot2\text{H}_2\text{O}$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q4" value="C"> C) $\text{CaOCl}_2$</label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q4" value="D"> D) $\text{CaCO}_3$</label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 5 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q5_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">5. The rain is treated as acid rain if:</span>
+            <span class="lang-te">5. ఏ సందర్భంలో వర్షపు నీటిని యాసిడ్ వర్షం (ఆమ్ల వర్షం) గా పరిగణిస్తారు?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q5" value="A"> 
+              <span class="lang-en">A) pH of rain water is 7</span><span class="lang-te">A) వర్షపు నీటి pH విలువ 7</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q5" value="B"> 
+              <span class="lang-en">B) pH of rain water is &lt; 5.6</span><span class="lang-te">B) వర్షపు నీటి pH విలువ &lt; 5.6</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q5" value="C"> 
+              <span class="lang-en">C) pH of rain water is &gt; 5.6</span><span class="lang-te">C) వర్షపు నీటి pH విలువ &gt; 5.6</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q5" value="D"> 
+              <span class="lang-en">D) pH of rain water is 14</span><span class="lang-te">D) వర్షపు నీటి pH విలువ 14</span>
+            </label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- MCQ 6 -->
+        <div class="p-3 md:p-4 rounded-lg border border-gray-200 bg-gray-50 q-card" id="q6_card">
+          <p class="font-bold text-gray-900 mb-3 text-sm md:text-base">
+            <span class="lang-en">6. In the activity removing water of crystallisation, on heating Copper Sulphate crystals turns to:</span>
+            <span class="lang-te">6. స్పటిక జలాన్ని తొలగించే ప్రయోగంలో, కాపర్ సల్ఫేట్ స్పటికాలను వేడి చేసినప్పుడు అవి ఏ రంగులోకి మారతాయి?</span>
+          </p>
+          <div class="space-y-2 font-bold text-xs md:text-sm">
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q6" value="A"> 
+              <span class="lang-en">A) Blue</span><span class="lang-te">A) నీలి రంగు</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q6" value="B"> 
+              <span class="lang-en">B) Pink</span><span class="lang-te">B) గులాబీ రంగు</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q6" value="C"> 
+              <span class="lang-en">C) Red</span><span class="lang-te">C) ఎరుపు రంగు</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer p-2 rounded hover:bg-gray-100"><input type="radio" name="q6" value="D"> 
+              <span class="lang-en">D) White</span><span class="lang-te">D) తెలుపు రంగు</span>
+            </label>
+          </div>
+          <div class="q-feedback mt-3 text-xs md:text-sm hidden border-t pt-3"></div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center pt-4">
+          <button type="button" onclick="submitQuiz()" class="bg-blue-700 hover:bg-blue-800 text-white font-bold px-6 py-2.5 md:px-8 md:py-3 rounded-lg shadow-lg text-base md:text-lg transition duration-200">
+            Submit Quiz
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <!-- Footer with User Contact Details -->
+  <footer class="bg-gray-900 text-gray-300 py-6 border-t border-gray-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-sm md:text-base font-bold text-white mb-1">Prepared by: A. Muninder Raju</p>
+      <p class="text-xs md:text-sm">GHM Chincholi B, Dist: Nirmal, Telangana</p>
+      <p class="text-xs text-gray-400 mt-1">
+        Email: <a href="mailto:muninderadluri@gmail.com" class="text-blue-400 hover:underline">muninderadluri@gmail.com</a>
+      </p>
+      <p class="text-xs text-gray-500 mt-3">© 2026 Abhyasa Vedika. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script for Language Toggle, Accordion, & Evaluation -->
+  <script>
+    function toggleLanguage() {
+      document.body.classList.toggle('active-te');
+      const btnText = document.getElementById('langBtnText');
+      if (document.body.classList.contains('active-te')) {
+        btnText.innerText = 'Switch to English';
+      } else {
+        btnText.innerText = 'Switch to Telugu';
+      }
+
+      if (!document.getElementById('scoreBox').classList.contains('hidden')) {
+        submitQuiz(true);
+      }
+    }
+
+    function toggleAnswer(ansId, iconId) {
+      const ansElem = document.getElementById(ansId);
+      const iconElem = document.getElementById(iconId);
+      
+      if (ansElem.classList.contains('show')) {
+        ansElem.classList.remove('show');
+        iconElem.innerText = '+';
+      } else {
+        ansElem.classList.add('show');
+        iconElem.innerText = '-';
+      }
+    }
+
+    const correctAnswers = {
+      q1: "C",
+      q2: "D",
+      q3: "B",
+      q4: "A",
+      q5: "B",
+      q6: "D"
+    };
+
+    const explanations = {
+      q1: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Acids turn blue litmus paper into red. Sulphuric acid ($\\text{H}_2\\text{SO}_4$) is an acid.</p><p class="font-bold">Correct Option: C) $\\text{H}_2\\text{SO}_4$</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">ఆమ్లాలు నీలి లిట్మస్‌ను ఎరుపు రంగులోకి మారుస్తాయి. సల్ఫ్యూరిక్ ఆమ్లం ($\\text{H}_2\\text{SO}_4$) ఒక ఆమ్లం.</p><p class="font-bold">సరియైన ఎంపిక: C) $\\text{H}_2\\text{SO}_4$</p>`
+      },
+      q2: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Bases have a pH greater than 7. Sodium hydroxide ($\\text{NaOH}$) is a strong base (pH $\\approx 14$).</p><p class="font-bold">Correct Option: D) $\\text{NaOH}$</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">క్షారాల pH విలువ 7 కంటే ఎక్కువ ఉంటుంది. సోడియం హైడ్రాక్సైడ్ ($\\text{NaOH}$) ఒక బలమైన క్షారం (pH $\\approx 14$).</p><p class="font-bold">సరియైన ఎంపిక: D) $\\text{NaOH}$</p>`
+      },
+      q3: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Non-metallic oxides are acidic in nature, so they react with a Base to form salt and water.</p><p class="font-bold">Correct Option: B) Base</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">అలోహ ఆక్సైడులు ఆమ్ల స్వభావం కలిగి ఉంటాయి. కాబట్టి అవి క్షారంతో చర్య జరిపి లవణం, నీటిని ఇస్తాయి.</p><p class="font-bold">సరియైన ఎంపిక: B) క్షారం</p>`
+      },
+      q4: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Plaster of Paris ($\\text{CaSO}_4\\cdot\\frac{1}{2}\\text{H}_2\\text{O}$) is used for making toys and statues.</p><p class="font-bold">Correct Option: A) $\\text{CaSO}_4\\cdot\\frac{1}{2}\\text{H}_2\\text{O}$</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">ప్లాస్టర్ ఆఫ్ పారిస్ ($\\text{CaSO}_4\\cdot\\frac{1}{2}\\text{H}_2\\text{O}$) ని బొమ్మలు మరియు విగ్రహాల తయారీలో వాడతారు.</p><p class="font-bold">సరియైన ఎంపిక: A) $\\text{CaSO}_4\\cdot\\frac{1}{2}\\text{H}_2\\text{O}$</p>`
+      },
+      q5: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">When the pH of rainwater drops below 5.6, it is called acid rain.</p><p class="font-bold">Correct Option: B) pH of rain water is &lt; 5.6</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">వర్షపు నీటి pH విలువ 5.6 కంటే తక్కువగా ఉన్నప్పుడు దానిని ఆమ్ల వర్షం అంటారు.</p><p class="font-bold">సరియైన ఎంపిక: B) వర్షపు నీటి pH విలువ &lt; 5.6</p>`
+      },
+      q6: {
+        en: `<p class="font-bold text-green-800">Explanation:</p><p class="font-bold">Blue Copper Sulphate crystals ($\\text{CuSO}_4\\cdot5\\text{H}_2\\text{O}$) lose water of crystallization upon heating and turn into White anhydrous powder ($\\text{CuSO}_4$).</p><p class="font-bold">Correct Option: D) White</p>`,
+        te: `<p class="font-bold text-green-800">వివరణ:</p><p class="font-bold">నీలిరంగు కాపర్ సల్ఫేట్ స్పటికాలను వేడి చేసినప్పుడు స్పటిక జలాన్ని కోల్పోయి తెల్లని నిరుదక పొడిగా మారతాయి.</p><p class="font-bold">సరియైన ఎంపిక: D) తెలుపు రంగు</p>`
+      }
+    };
+
+    function submitQuiz(isLanguageChange = false) {
+      let score = 0;
+      const total = 6;
+      const isTelugu = document.body.classList.contains('active-te');
+
+      for (let i = 1; i <= total; i++) {
+        const qName = 'q' + i;
+        const selected = document.querySelector(`input[name="${qName}"]:checked`);
+        const qCard = document.getElementById(`${qName}_card`);
+        const feedback = qCard.querySelector('.q-feedback');
+        
+        feedback.classList.remove('hidden', 'bg-green-100', 'bg-red-100', 'text-green-900', 'text-red-900');
+        qCard.classList.remove('bg-green-50', 'bg-red-50', 'border-green-400', 'border-red-400');
+
+        const expText = isTelugu ? explanations[qName].te : explanations[qName].en;
+
+        if (selected) {
+          if (selected.value === correctAnswers[qName]) {
+            score++;
+            qCard.classList.add('bg-green-50', 'border-green-400');
+            feedback.classList.add('bg-green-100', 'text-green-900', 'p-3', 'rounded');
+            feedback.innerHTML = `<p class="font-bold text-green-700 mb-1">✓ Correct Answer! (సరియైన సమాధానం)</p>${expText}`;
+          } else {
+            qCard.classList.add('bg-red-50', 'border-red-400');
+            feedback.classList.add('bg-green-100', 'text-green-900', 'p-3', 'rounded');
+            feedback.innerHTML = `<p class="font-bold text-red-600 mb-1">✗ Wrong Answer! (మీరు ఎంచుకున్నది: ${selected.value})</p>${expText}`;
+          }
+        } else {
+          qCard.classList.add('bg-red-50', 'border-red-400');
+          feedback.classList.add('bg-green-100', 'text-green-900', 'p-3', 'rounded');
+          feedback.innerHTML = `<p class="font-bold text-red-600 mb-1">⚠ Not Answered!</p>${expText}`;
+        }
+        feedback.classList.remove('hidden');
+      }
+
+      const scoreBox = document.getElementById('scoreBox');
+      const scoreTitle = document.getElementById('scoreTitle');
+      scoreBox.classList.remove('hidden');
+      scoreTitle.innerText = `Your Score: ${score} / ${total}`;
+      
+      if (window.MathJax) {
+        MathJax.typesetPromise();
+      }
+
+      if (!isLanguageChange) {
+        scoreBox.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>
